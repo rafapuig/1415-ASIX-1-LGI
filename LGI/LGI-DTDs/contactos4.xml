@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE contactos SYSTEM "contactos4.dtd">
+
+<contactos origen="LGI - XML - DTD" version="1.0">
+  <contacto persona="Fulanito_Perez" etiquetas="escritor xml estudiante">
+    <nombreCompleto>
+      <nombre>Fulanito</nombre>
+      <nombre>José</nombre>
+      <primerApellido>Perez</primerApellido>      
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Margaritas, 34 - (46025) Valencia</direccion>
+      <latitud>50.7219</latitud>
+      <longitud>-3.533617</longitud>
+    </localizacion>
+    <telefono tipo="Casa">99555666777</telefono>
+    <conoce contactos="Menganito_Lopez Zutanito_Garcia" />
+    <descripcion>
+      Fulanito es un estudiante de ASIX y creador de la <em>primera version</em><br />
+      A Fulanito le <strong>encanta</strong> XML!
+    </descripcion>
+  </contacto>
+  <contacto persona="Menganito_Lopez" etiquetas="escritor consultor senior">
+    <nombreCompleto>
+      <nombre>Menganito</nombre>
+      <primerApellido>Lopez</primerApellido>      
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Paradero desconocido</direccion>      
+    </localizacion>
+    <telefono>555-777-999</telefono>
+    <conoce contactos="Fulanito_Perez Zutanito_Garcia" />
+    <descripcion>Consultor Tecnico Senior, se tituló en ASIX hace unos años</descripcion>
+  </contacto>
+</contactos>

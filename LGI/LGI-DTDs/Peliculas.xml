@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE cine [
+  <!ELEMENT cine (peliculas*,actores*)>
+  <!ELEMENT peliculas (pelicula)*>
+  <!ELEMENT pelicula (titulo, nacionalidad+, reparto)>
+  <!ATTLIST pelicula año CDATA #IMPLIED>
+
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT nacionalidad (#PCDATA)>
+  <!ELEMENT reparto (personaje*)>
+  <!ELEMENT personaje (#PCDATA)>
+  <!ATTLIST personaje actor IDREF #REQUIRED>
+
+  <!ELEMENT actores (actor)*>
+  <!ELEMENT actor (#PCDATA)>
+  <!ATTLIST actor ID ID #REQUIRED>
+  <!ATTLIST actor nacionalidad CDATA #REQUIRED>
+  <!ATTLIST actor genero (Hombre | Mujer) #REQUIRED>
+]>
+<cine>
+  <peliculas>
+    <pelicula año="2013">
+      <titulo>El lobo de Wall Street</titulo>
+      <nacionalidad>Estados Unidos</nacionalidad>
+      <nacionalidad>Canada</nacionalidad>
+      <reparto>
+        <personaje actor="Leonardo_DiCaprio">Beauford</personaje>
+      </reparto>
+    </pelicula>
+  </peliculas>
+  <actores>
+    <actor ID="Leonardo_DiCaprio" genero="Hombre" nacionalidad="Estados Unidos">
+      Leonardo DiCaprio
+    </actor>
+    <actor ID="Angelina_Jolie" genero="Mujer" nacionalidad="Estados Unidos">Angelina Jolie</actor>
+    <actor ID="Robert_De_Niro" genero="Hombre" nacionalidad="Estados Unidos">Robert De Niro</actor>
+  </actores>
+</cine>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE contactos [
+  <!ELEMENT contactos (contacto)*>
+  <!ELEMENT contacto (nombreCompleto, localizacion, telefono, conoce, descripcion)>
+  
+  <!ELEMENT nombreCompleto (nombre+, primerApellido, segundoApellido?)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT primerApellido (#PCDATA)>
+  <!ELEMENT segundoApellido (#PCDATA)>
+
+  <!ELEMENT localizacion (direccion | (latitud, longitud))*>
+  <!ELEMENT direccion (#PCDATA)>
+  <!ELEMENT latitud (#PCDATA)>
+  <!ELEMENT longitud (#PCDATA)>
+
+  <!ELEMENT telefono (#PCDATA)>
+
+  <!ELEMENT conoce (#PCDATA)>
+
+  <!ELEMENT descripcion (#PCDATA | em | strong | br)*>
+  <!ELEMENT em (#PCDATA)>
+  <!ELEMENT strong (#PCDATA)>
+  <!ELEMENT br EMPTY>
+]>
+
+<contactos>
+  <contacto>
+    <nombreCompleto>
+      <nombre>Fulanito</nombre>
+      <nombre>José</nombre>
+      <primerApellido>Perez</primerApellido>      
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Margaritas, 34 - (46025) Valencia</direccion>
+      <latitud>50.7219</latitud>
+      <longitud>-3.533617</longitud>
+    </localizacion>
+    <telefono>99555666777</telefono>
+    <conoce>Menganito Lopez, Zutanito Garcia</conoce>
+    <descripcion>
+      Fulanito es un estudiante de ASIX y creador de la <em>primera version</em><br />
+      A Fulanito le <strong>encanta</strong> XML!
+    </descripcion>
+  </contacto>
+  <contacto>
+    <nombreCompleto>
+      <nombre>Menganito</nombre>
+      <primerApellido>Lopez</primerApellido>      
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Paradero desconocido</direccion>      
+    </localizacion>
+    <telefono>555-777-999</telefono>
+    <conoce>Fulanito Perez, Zutanito Garcia</conoce>
+    <descripcion>Consultor Tecnico Senior, se tituló en ASIX hace unos años</descripcion>
+  </contacto>
+  <contacto>
+    <nombreCompleto>
+      <nombre>Jose</nombre>
+      <nombre>Luis</nombre>
+      <primerApellido>Martin</primerApellido> 
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Mi casa</direccion>
+      <latitud>4554</latitud>
+      <longitud>3434</longitud>
+      <direccion>defefrfefefe</direccion>
+    </localizacion>
+    <telefono>455454545</telefono>
+    <conoce>rtgrgrg</conoce>
+    <descripcion></descripcion>    
+  </contacto>
+</contactos>
+

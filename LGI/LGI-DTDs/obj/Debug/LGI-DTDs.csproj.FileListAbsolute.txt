@@ -1,0 +1,2 @@
+C:\Users\Rafa\Documents\Pruebas Git\vsgit2\LGI\LGI-DTDs\bin\Debug\LGI-DTDs.exe.config
+C:\Users\Rafa\Google Drive\Funcionario\2014-15\Lenguajes Marcas\GitHub\LGI\LGI-DTDs\bin\Debug\LGI-DTDs.exe.config

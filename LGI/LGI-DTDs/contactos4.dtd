@@ -1,0 +1,29 @@
+﻿<!ELEMENT contactos (contacto)*>
+<!ATTLIST contactos version CDATA #FIXED "1.0">
+<!ATTLIST contactos origen CDATA #IMPLIED>
+
+<!ELEMENT contacto (nombreCompleto, localizacion, telefono, conoce, descripcion)>
+<!ATTLIST contacto persona ID #REQUIRED>
+<!ATTLIST contacto etiquetas NMTOKENS #IMPLIED>
+
+<!ELEMENT nombreCompleto (nombre+, primerApellido, segundoApellido?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT primerApellido (#PCDATA)>
+<!ELEMENT segundoApellido (#PCDATA)>
+
+<!ELEMENT localizacion (direccion | (latitud, longitud))*>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+
+<!ELEMENT telefono (#PCDATA)>
+<!ENTITY % TipoTelefonoPredeterminado '"Casa"'>
+<!ATTLIST telefono tipo (Casa | Trabajo | Movil | Fax) '%TipoTelefonoPredeterminado;'>
+
+<!ELEMENT conoce EMPTY>
+<!ATTLIST conoce contactos IDREFS #IMPLIED>
+
+<!ELEMENT descripcion (#PCDATA | em | strong | br)*>
+<!ELEMENT em (#PCDATA)>
+<!ELEMENT strong (#PCDATA)>
+<!ELEMENT br EMPTY>
