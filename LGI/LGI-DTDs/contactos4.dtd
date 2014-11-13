@@ -18,7 +18,7 @@
 
 <!ELEMENT telefono (#PCDATA)>
 <!ENTITY % TipoTelefonoPredeterminado '"Casa"'>
-<!ATTLIST telefono tipo (Casa | Trabajo | Movil | Fax) '%TipoTelefonoPredeterminado;'>
+<!ATTLIST telefono tipo (Casa | Trabajo | Movil | Fax) %TipoTelefonoPredeterminado;>
 
 <!ELEMENT conoce EMPTY>
 <!ATTLIST conoce contactos IDREFS #IMPLIED>
