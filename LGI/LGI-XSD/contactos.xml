@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<contactos xmlns="http://tempuri.org/Contactos.xsd">
+  <contacto>
+    <nombreCompleto>
+      <nombre>Fulanito</nombre>
+      <primerApellido>Perez</primerApellido>
+      <segundoApellido>Martin</segundoApellido>      
+    </nombreCompleto>
+  </contacto>
+  <contacto>
+    <nombreCompleto>
+      <nombre>Jose</nombre>
+      <nombre>Luis</nombre>
+      <primerApellido>Rodriguez</primerApellido>
+    </nombreCompleto>
+  </contacto>
+</contactos> 

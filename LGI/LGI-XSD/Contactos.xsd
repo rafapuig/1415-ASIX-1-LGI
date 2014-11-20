@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema id="Contactos"
+    targetNamespace="http://tempuri.org/Contactos.xsd"
+    elementFormDefault="qualified"
+    xmlns:contactos="http://tempuri.org/Contactos.xsd"    
+    xmlns="http://www.w3.org/2001/XMLSchema">
+
+  <element name="nombre" type="string" />
+  <element name="primerApellido" type="string" />
+  <element name="segundoApellido" type="string" />
+
+  <group name="NombreGroup">
+    <sequence>
+      <element ref="contactos:nombre" maxOccurs="2" />
+      <element ref="contactos:primerApellido" />
+      <element ref="contactos:segundoApellido" minOccurs="0" />
+    </sequence>
+  </group>
+
+  <complexType name="NombreType">
+    <group ref="contactos:NombreGroup" />
+    <attribute name="titulo" type="string" />
+  </complexType>
+
+
+  <element name="contactos">
+    <complexType>
+      <sequence>
+        <element name="contacto" minOccurs="0" maxOccurs="unbounded">
+          <complexType>
+            <sequence>
+              <element name="nombreCompleto" type="contactos:NombreType" />
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>      
+    </complexType>
+  </element>
+  
+</schema>

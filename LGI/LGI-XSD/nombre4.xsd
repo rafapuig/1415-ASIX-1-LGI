@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://tempuri.org/nombre.xsd" elementFormDefault="qualified"
+        xmlns:target="http://tempuri.org/nombre.xsd">
+
+  <element name="nombre" type="string" />
+  <element name="primerApellido" type="string" />
+  <element name="segundoApellido" type="string" />
+
+  <group name="NombreGroup">
+    <sequence>
+      <element ref="target:nombre" maxOccurs="2" />
+      <element ref="target:primerApellido" />
+      <element ref="target:segundoApellido" minOccurs="0" />      
+    </sequence>
+  </group>
+  
+  <complexType name="NombreType">
+    <group ref="target:NombreGroup" />        
+    <attribute name="titulo" type="string" />
+  </complexType>
+  
+  <element name="nombreCompleto" type="target:NombreType" /> 
+
+</schema>

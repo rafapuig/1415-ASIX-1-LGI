@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://tempuri.org/nombre.xsd" elementFormDefault="qualified"
+        xmlns:target="http://tempuri.org/nombre.xsd">
+
+  <complexType name="NombreType">
+    <sequence>
+      <element name="nombre" type="string" />
+      <element name="primerApellido" type="string" />
+      <element name="segundoApellido" type="string" />
+    </sequence>
+    <attribute name="titulo" type="string" />
+  </complexType>
+  
+  <element name="nombreCompleto" type="target:NombreType" />  
+
+</schema>

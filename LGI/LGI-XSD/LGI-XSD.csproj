@@ -34,11 +34,24 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Contactos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nombre4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nombre3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nombre2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="nombre.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contactos.xml" />
     <Content Include="nombre.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

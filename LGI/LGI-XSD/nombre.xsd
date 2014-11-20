@@ -2,6 +2,7 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         targetNamespace="http://tempuri.org/nombre.xsd" elementFormDefault="qualified"
         xmlns:target="http://tempuri.org/nombre.xsd">  
+  
   <element name="nombreCompleto">
     <complexType>
       <sequence>
@@ -12,4 +13,5 @@
       <attribute name="titulo" type="string" />
     </complexType>
   </element>
+
 </schema>
