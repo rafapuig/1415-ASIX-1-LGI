@@ -40,6 +40,15 @@
             <sequence>
               <element name="nombreCompleto" type="contactos:NombreType" />
               <element name="localizacion" type="contactos:LocalizacionType" />
+              <element name="telefono">
+                <complexType>
+                  <simpleContent>
+                    <extension base="string">
+                      <attribute name="tipo" type="string" default="Home" />
+                    </extension>
+                  </simpleContent>
+                </complexType>
+              </element>
             </sequence>
           </complexType>
         </element>
