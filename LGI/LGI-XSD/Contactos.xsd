@@ -42,6 +42,11 @@
     </choice>
   </complexType>
   
+  <attributeGroup name="contactosAttributes">
+    <attribute name="version" type="string" fixed="1.0" />
+    <attribute name="origen" type="string" />
+  </attributeGroup>
+  
   <element name="contactos">
     <complexType>
       <sequence>
@@ -64,7 +69,8 @@
             </sequence>
           </complexType>
         </element>
-      </sequence>      
+      </sequence>
+      <attributeGroup ref="contactos:contactosAttributes" />
     </complexType>
   </element>
   
