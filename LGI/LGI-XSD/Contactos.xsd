@@ -22,7 +22,16 @@
     <attribute name="titulo" type="string" />
   </complexType>
 
-
+  <complexType name="LocalizacionType">
+    <choice minOccurs="0" maxOccurs="unbounded">
+      <element name="direccion" type="string" />
+      <sequence>
+        <element name="latitud" type="string" />
+        <element name="longitud" type="string" />        
+      </sequence>      
+    </choice>    
+  </complexType>
+  
   <element name="contactos">
     <complexType>
       <sequence>
@@ -30,6 +39,7 @@
           <complexType>
             <sequence>
               <element name="nombreCompleto" type="contactos:NombreType" />
+              <element name="localizacion" type="contactos:LocalizacionType" />
             </sequence>
           </complexType>
         </element>
