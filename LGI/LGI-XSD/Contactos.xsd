@@ -32,6 +32,8 @@
     </choice>    
   </complexType>
   
+  <complexType name="ConoceType"></complexType>
+  
   <element name="contactos">
     <complexType>
       <sequence>
@@ -49,6 +51,7 @@
                   </simpleContent>
                 </complexType>
               </element>
+              <element name="conoce" type="contactos:ConoceType" />
             </sequence>
           </complexType>
         </element>
