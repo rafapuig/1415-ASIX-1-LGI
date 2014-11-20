@@ -59,7 +59,7 @@
                 <complexType>
                   <simpleContent>
                     <extension base="string">
-                      <attribute name="tipo" type="string" default="Home" />
+                      <attribute name="tipo" type="string" default="Casa" />
                     </extension>
                   </simpleContent>
                 </complexType>

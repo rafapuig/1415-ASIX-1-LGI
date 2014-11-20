@@ -1,11 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<contactos xmlns="http://tempuri.org/Contactos.xsd">
+<contactos xmlns="http://tempuri.org/Contactos.xsd"
+           version="1.0" origen="LGI XML Tema 4 - Esquemas XSD">
   <contacto>
     <nombreCompleto>
       <nombre>Fulanito</nombre>
       <primerApellido>Perez</primerApellido>
       <segundoApellido>Martin</segundoApellido>      
     </nombreCompleto>
+    <localizacion>
+      <direccion>Calle de los Olmos, 23 - Madrid</direccion>
+      <latitud>50.7218</latitud>
+      <longitud>-3.533617</longitud>      
+    </localizacion>
+    <telefono tipo="Casa">000-111-222-333</telefono>
+    <conoce/>
+    <descripcion>
+      Fulanito es un estudiante de ASIX y creador de la <em>primera version</em><br />
+      A Fulanito le <strong>encanta</strong> XML!
+    </descripcion>
   </contacto>
   <contacto>
     <nombreCompleto>
@@ -13,5 +25,11 @@
       <nombre>Luis</nombre>
       <primerApellido>Rodriguez</primerApellido>
     </nombreCompleto>
-  </contacto>
+    <localizacion>
+      <direccion>Paradero desconocido</direccion>
+    </localizacion>
+    <telefono>555-777-999</telefono>
+    <conoce/>
+    <descripcion>Consultor Tecnico Senior, se tituló en ASIX hace unos años</descripcion>
+  </contacto>  
 </contactos> 
