@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<contactos xmlns="http://tempuri.org/Contactos.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://tempuri.org/Contactos.xsd Contactos3.xsd"
+           version="1.0" origen="LGI XML Tema 4 - Esquemas XSD">
+  
+  <contacto persona="Fulanito_Perez" etiquetas="escritor xml estudiante">
+    <nombreCompleto>
+      <nombre>Fulanito</nombre>
+      <primerApellido>Perez</primerApellido>
+      <segundoApellido>Martin</segundoApellido>      
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Calle de los Olmos, 23 - Madrid</direccion>
+      <latitud>50.7218</latitud>
+      <longitud>-3.533617</longitud>      
+    </localizacion>
+    <telefono tipo="Trabajo">000-111-222-333</telefono>
+    <conoce contactos="Menganito_Lopez"/>
+    <descripcion>
+      Fulanito es un estudiante de ASIX y creador de la <em>primera version</em><br />
+      A Fulanito le <strong>encanta</strong> XML!
+    </descripcion>
+  </contacto>
+  
+  <contacto persona="Menganito_Lopez" etiquetas="escritor consultor senior">
+    <nombreCompleto>
+      <nombre>Menganito</nombre>
+      <primerApellido>Lopez</primerApellido>
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Paradero desconocido</direccion>
+    </localizacion>
+    <telefono tipo="Casa">555-777-999</telefono>
+    <conoce contactos="Fulanito_Perez Zutanito_Garcia" />
+    <descripcion>Consultor Tecnico Senior, se tituló en ASIX hace unos años</descripcion>
+  </contacto>
+  
+  <contacto persona="Zutanito_Garcia" etiquetas="xml esquemas experto">
+    <nombreCompleto>
+      <nombre>Zutanito</nombre>
+      <nombre>Garcia</nombre>
+      <primerApellido>Rodriguez</primerApellido>
+    </nombreCompleto>
+    <localizacion>
+      <direccion>Paradero desconocido</direccion>
+      <latitud>34.445454</latitud>
+      <longitud>-4.345</longitud>
+    </localizacion>
+    <telefono>565-747-989</telefono>
+    <conoce/>
+    <descripcion>Consultor Tecnico Senior, se tituló en ASIX hace unos años</descripcion>
+  </contacto>  
+
+</contactos> 

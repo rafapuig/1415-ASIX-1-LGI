@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <contactos xmlns="http://tempuri.org/Contactos.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://tempuri.org/Contactos.xsd Contactos.xsd"
            version="1.0" origen="LGI XML Tema 4 - Esquemas XSD">
   <contacto>
     <nombreCompleto>
@@ -10,12 +12,12 @@
     <localizacion>
       <direccion>Calle de los Olmos, 23 - Madrid</direccion>
       <latitud>50.7218</latitud>
-      <longitud>-3.533617</longitud>      
+      <longitud>-3.533617</longitud>
     </localizacion>
-    <telefono tipo="Casa">000-111-222-333</telefono>
+    <telefono tipo="Walkie-Talkie">000-111-222-333</telefono>
     <conoce/>
     <descripcion>
-      Fulanito es un estudiante de ASIX y creador de la <em>primera version</em><br />
+      Fulanito es un estudiante de <strong>ASIX</strong> y creador de la <em>primera version</em><br />
       A Fulanito le <strong>encanta</strong> XML!
     </descripcion>
   </contacto>

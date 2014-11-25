@@ -34,6 +34,12 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Contactos3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Contactos2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Contactos.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -51,7 +57,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contactos.xml" />
+    <Content Include="Contactos3.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contactos2.xml" />
+    <Content Include="Contactos.xml" />
     <Content Include="nombre.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

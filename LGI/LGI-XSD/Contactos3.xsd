@@ -26,13 +26,15 @@
     <choice minOccurs="0" maxOccurs="unbounded">
       <element name="direccion" type="string" />
       <sequence>
-        <element name="latitud" type="string" />
-        <element name="longitud" type="string" />        
+        <element name="latitud" type="float" />
+        <element name="longitud" type="float" />        
       </sequence>      
     </choice>    
   </complexType>
-
-  <complexType name="ConoceType"></complexType>
+  
+  <complexType name="ConoceType">
+    <attribute name="contactos" type="IDREFS" />
+  </complexType>
   
   <complexType name="DescripcionType" mixed="true">
     <choice minOccurs="0" maxOccurs="unbounded">
@@ -43,10 +45,28 @@
   </complexType>
   
   <attributeGroup name="contactosAttributes">
-    <attribute name="version" type="string" fixed="1.0" />
+    <attribute name="version" type="decimal" fixed="1.0" />
     <attribute name="origen" type="string" />
   </attributeGroup>
-  
+
+  <complexType name="TelefonoType">
+    <simpleContent>
+      <extension base="string">
+        <attribute name="tipo" default="Casa">
+          <simpleType>
+            <restriction base="string">
+              <enumeration value="Casa"/>
+              <enumeration value="Trabajo"/>
+              <enumeration value="Movil"/>
+              <enumeration value="Fax"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+
   <element name="contactos">
     <complexType>
       <sequence>
@@ -55,18 +75,12 @@
             <sequence>
               <element name="nombreCompleto" type="contactos:NombreType" />
               <element name="localizacion" type="contactos:LocalizacionType" />
-              <element name="telefono">
-                <complexType>
-                  <simpleContent>
-                    <extension base="string">
-                      <attribute name="tipo" type="string" default="Casa" />
-                    </extension>
-                  </simpleContent>
-                </complexType>
-              </element>
+              <element name="telefono" type="contactos:TelefonoType" />
               <element name="conoce" type="contactos:ConoceType" />
               <element name="descripcion" type="contactos:DescripcionType" />
             </sequence>
+            <attribute name="etiquetas" type="token" />
+            <attribute name="persona" type="ID" />
           </complexType>
         </element>
       </sequence>
